@@ -16,7 +16,7 @@ resource "oci_devops_build_run" "test_build_run_1" {
   display_name = "build_run_${random_id.tag.hex}"
 
   provisioner "local-exec" {
-    command = "sleep 300"
+    command = "sleep 1000"
   }
 
 }
